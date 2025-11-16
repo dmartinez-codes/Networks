@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #cfe7ff;
+        text-align: center;
+        margin: 0;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+        color: #003366;
+    }
+
+    p {
+        font-size: 18px;
+        color: #003366;
+    }
+
+    button {
+        background-color: #FFFFFF;
+        border: frame;
+        padding: 12px 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #FFFFFF;
+        transform: scale(1.05);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        gap: 20px;
+        max-width: 900px;
+        margin: 20px auto;
+    }
+
+    .section {
+        background: cfe7ff;
+        padding: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Network Classifications</h2>
+
+<p>Here you will see the different types of network classifications and their descriptions.<br>
+Hope you enjoy learning!! 😊</p>
+
+<img id="myImage" src="wan.png" style="width:200px; border-radius:10px;">
+
+<div class="grid">
+
+    <div class="section">
+        <button onclick="document.getElementById('myImage').src='wan.png'">Wide Area Network (WAN)</button>
+        <p>A WAN connects multiple smaller networks like LANs across large areas such as cities, countries, or worldwide.</p>
+    </div>
+
+    <div class="section">
+        <button onclick="document.getElementById('myImage').src='pan.png'">Personal Area Network (PAN)</button>
+        <p>A PAN connects electronic devices within a person's immediate range, like phones, earbuds, and smartwatches.</p>
+    </div>
+
+    <div class="section">
+        <button onclick="document.getElementById('myImage').src='man.png'">Metropolitan Area Network (MAN)</button>
+        <p>A MAN connects multiple LANs across a city or large campus, larger than a LAN but smaller than a WAN.</p>
+    </div>
+	
+    <div class="section">
+        <button onclick="document.getElementById('myImage').src='lan.png'">Local Area Network (LAN)</button>
+        <p>A LAN connects devices in small areas like homes, offices, or school labs.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
